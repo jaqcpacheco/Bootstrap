@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Framework</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #563d7c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section img {
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #563d7c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #563d7c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #452d63;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ddd;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bootstrap</h1>
+  </header>
+
+  <main>
+    <section>
+      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Logo do Bootstrap">
+
+      <div class="content">
+        <p>
+          O Bootstrap é um framework front-end popular utilizado para o desenvolvimento de interfaces web responsivas e modernas.
+          Ele oferece um conjunto de componentes prontos, sistema de grid e estilos CSS que facilitam a criação de layouts consistentes.
+        </p>
+
+        <p>
+          Entre suas principais características estão a responsividade, facilidade de uso, grande comunidade e vasta documentação.
+          Ele permite que desenvolvedores criem aplicações rapidamente sem precisar começar do zero.
+        </p>
+
+        <a href="https://getbootstrap.com/" target="_blank">
+          Acessar documentação oficial
+        </a>
+
+        <br>
+
+        <button onclick="mostrarVantagens()">
+          Mostrar vantagens
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Exemplo de página com HTML, CSS e JavaScript</p>
+  </footer>
+
+  <script>
+    const vantagens = [
+      "Facilidade de uso",
+      "Sistema de grid responsivo",
+      "Componentes prontos",
+      "Compatibilidade com navegadores",
+      "Grande comunidade"
+    ];
+
+    function mostrarVantagens() {
+      vantagens.forEach(function(item) {
+        alert(item);
+      });
+    }
+  </script>
+
+</body>
+</html>
